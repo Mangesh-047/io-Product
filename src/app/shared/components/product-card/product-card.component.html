@@ -1,0 +1,13 @@
+
+<div class="card mb-3">
+    <div class="card-header text-white" [ngClass]="{'bg-success': product.pcat === 'Product', 'bg-warning' : product.pcat === 'Catlog'}">
+        <h3>
+            {{product.pname}}
+        </h3>
+    </div>
+    <div class="card-body">
+        <p>
+            {{product.pdesc}}
+        </p>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<h1 class="bg-primary p-4 text-white">
+  Input-Output Product
+</h1>
+
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <div class="bg-light p-4 rounded">
+
+        <app-product-form (pInfo)="getProductAdd($event)"></app-product-form>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <app-product-card [product]="p" *ngFor="let p of productArray"></app-product-card>
+    </div>
+  </div>
+</div>
